@@ -1,2 +1,13 @@
 # DataAnalysis
-This project explores machine learning techniques on a dataset with categorical and numerical attributes. Tasks include pre-processing, PCA, regression, classification, and clustering. Models are evaluated using metrics like RMSE, F1-score, and SSE, offering insights into the performance and applicability of various approaches.
+
+This project aims to apply a range of machine learning techniques to a dataset containing both categorical and numerical attributes, enabling a deeper understanding of how various algorithms perform under different conditions. The dataset is first pre-processed by removing categorical attributes, leaving only the numerical features for analysis. Then, Principal Component Analysis (PCA) is applied to reduce the dimensionality of the data, extracting the three most important principal components to simplify subsequent modeling tasks.
+
+The project focuses on three key areas of machine learning: regression, classification, and clustering.
+
+Regression Analysis: In this part, various regression models are implemented to predict a numerical attribute from the dataset. The models applied include Linear Regression, Random Forests, Extra Trees, AdaBoost, XGBoost, and NGBoost. For each model, performance is evaluated using two key metrics: Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE). This analysis allows for a comparison of model accuracy and robustness, helping to determine the most effective model for numerical prediction in the context of the dataset.
+
+Classification: The goal of the classification task is to predict a categorical label using the available features. Both the original dataset (before PCA and feature selection) and the pre-processed dataset (after removing categorical features and applying PCA) are used for classification. Several classifiers are tested, including Logistic Regression, Naive Bayes, K-Nearest Neighbors (KNN), Linear SVM, Kernel SVM, Decision Trees, and basic Neural Networks. The performance of these models is evaluated based on Precision, Recall, and F1-score, providing insight into their ability to handle imbalanced data and generalize to unseen examples.
+
+Clustering: In this section, unsupervised learning techniques are applied to group the data into clusters. Clustering algorithms like K-means, Expectation-Maximization (EM) Clustering, and K-medoids are tested on both the original and z-score transformed datasets. Key metrics such as SSE, Silhouette score, BetaCV, Dunn’s Index, and Hubert’s Statistic are computed to evaluate the clustering quality. The analysis provides an assessment of how well the models identify meaningful groups within the data and whether feature scaling improves clustering performance.
+
+Overall, this project offers a comprehensive comparison of multiple machine learning algorithms across different tasks and datasets, contributing valuable insights into their effectiveness for various types of data analysis.
